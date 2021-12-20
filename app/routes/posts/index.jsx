@@ -13,7 +13,7 @@ export const loader = async () => {
 }
 
 function PostItems() {
-  const { posts } = useLoaderData()
+  const { posts = [] } = useLoaderData()
   return (
     <div>
       <div className="page-header">
